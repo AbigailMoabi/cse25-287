@@ -2,56 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat | Study With Me</title>
 </head>
 <body>
 
     <header>
-        <img src="logo.png" alt="Study With Me Logo" width="50">
+        <img src="logo.png" alt="Study With Me Logo">
         <nav>
             <a href="index.html">Home</a>
-            <a href="coursehub.html">Course Hub</a>
+            <a href="coursehub.html">Course hub</a>
             <a href="chat.html">Chat</a>
             <a href="study.html">Study</a>
             <a href="resources.html">Resources</a>
-            <button>Log in</button>
-            <button>Sign up</button>
+            <button type="button">Log in</button>
+            <button type="button">Sign up</button>
         </nav>
     </header>
 
     <main>
-        <h1>COMMUNITY CHAT</h1>
-        
-        <div class="chat-container">
-            <aside class="chat-sidebar">
-                <h3>Chat Rooms</h3>
-                <ul>
-                    <li>General Discussion</li>
-                    <li>System Unit Lab</li>
-                    <li>Java Help Desk</li>
-                </ul>
-            </aside>
+        <h1>ROOMS|CHATS:</h1>
 
-            <section class="chat-box">
-                <div class="messages">
-                    <p><strong>Admin:</strong> Welcome to the Study With Me chat!</p>
-                </div>
-                <input type="text" placeholder="Type a message...">
-                <button>Send</button>
-            </section>
-        </div>
+        <section>
+            <div>
+                <h2>ENGINEERING</h2>
+                <ol>
+                    <li>Computer Systems</li>
+                    <li>Mechanical</li>
+                    <li>Electrical</li>
+                </ol>
+            </div>
+
+            <div>
+                <h2>HEALTH SCIENCE</h2>
+                <ol>
+                    <li>Medicine</li>
+                    <li>Nursing</li>
+                    <li>Occupational Health & Safety</li>
+                </ol>
+            </div>
+
+            <div>
+                <h2>GENERAL CHAT:</h2>
+                <p>14 new messages</p>
+                <button type="button">view</button>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <p>Hello, I need your help with WMD</p>
+                <p>Sure! On which chapter?</p>
+            </div>
+
+            <form>
+                <input type="text" placeholder="type your message here...">
+                <button type="button">send</button>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>ABOUT: About us</p>
-            <p>CONTACT: +267 76103149 | +267 72615850</p>
-            <p>StudyWMe@gmail.com</p>
-            <p>LEGAL: privacy policy</p>
-        </div>
+        <section>
+            <div>
+                <p><strong>ABOUT</strong></p>
+                <a href="about.html">About us</a>
+            </div>
 
-        <div class="copyright">
+            <div>
+                <p><strong>CONTACT</strong></p>
+                <p>+267 76103149</p>
+                <p>+267 72615850</p>
+                <p>StudyWMe@gmail.com</p>
+            </div>
+
+            <div>
+                <p><strong>LEGAL</strong></p>
+                <p>privacy policy</p>
+            </div>
+        </section>
+
+        <div>
             <p>&copy; 2026 Study With Me. All rights reserved.</p>
         </div>
     </footer>
