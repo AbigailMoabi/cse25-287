@@ -38,8 +38,12 @@ padding: 20px;
 }
 
 h1 {
-    font-size: 40px;
-    text-transform: uppercase; 
+   font-family: 'ADLaM Display', system-ui;
+   font-weight: 400;
+   font-size: 50px;
+   line-height:1.2;
+   color:#ffffff
+   text-transform: lowercase; 
 }
 
 
@@ -65,13 +69,6 @@ footer div {
     text-align: center;
     margin-bottom: 20px;
     font-size: 14px;
-}
-
-
-footer h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
 }
 
 footer h3 {
