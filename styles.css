@@ -10,10 +10,11 @@ body {
 }
 /* nav and header */
 header {
-    background-color: #d1e8e2;
-    padding: 10px;
     display: flex;
+    justify-content: space-between;
+    padding: 20px;
     align-items: center;
+    background-color: #d1e8e2;
 }
 
 .logo-container { 
@@ -25,13 +26,27 @@ header {
 }
 
 nav a {
+    font-family: 'ADLaM Display', sans-serif;
     color: #ffffff;
     background-color: #31708e;
     padding: 8px 15px;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 15px;
+    border-radius: 25px;
+    display: inline-block;
 }
  
+nav button {
+    color: #ffffff;
+    background-color: #004d4d;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    font-family:'ADLaM Display', sans-serif;
+    margin: 10px; 
+}
+
 /* main content */
 section {
 padding: 20px;
@@ -39,11 +54,10 @@ padding: 20px;
 
 h1 {
    font-family: 'ADLaM Display', system-ui;
-   font-weight: 400;
    font-size: 50px;
-   line-height:1.2;
-   color:#ffffff
+   color:#ffffff;
    text-transform: lowercase; 
+   margin-left: 20px;
 }
 
 
