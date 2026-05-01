@@ -1,0 +1,70 @@
+body { 
+    font-family: Arial, sans-serif; 
+    color: #ffffff; 
+    background-color: #333333; 
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.6;
+} 
+
+header {
+    background-color: #d1e8e2;
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    background-color: #31708e;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+body { 
+    font-family: Arial, sans-serif; 
+    color: #ffffff; 
+    background-image: url("study world.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0; 
+    padding: 0; 
+}
+
+footer {
+    background-color: #fcf9f2;
+    color: #000000;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+footer div {
+    flex: 1;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+footer p, footer a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin: 5px 0;
+}
