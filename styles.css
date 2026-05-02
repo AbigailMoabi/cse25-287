@@ -32,6 +32,7 @@ nav {
 
 nav a, nav button {
     font-family: Arial;
+    font-weight: normal;
     font-size: 15px;
     color: #ffffff;
     background-color: #31708e;
@@ -39,6 +40,7 @@ nav a, nav button {
     text-decoration: none;
     border-radius: 25px;
     border: none;
+    cursor: pointer;
 }
 
 section {
@@ -49,6 +51,7 @@ h1 {
    font-family: 'ADLaM Display', cursive;
    font-size: 50px;
    color: #ffffff;
+   margin-top: 50px;
    text-transform: lowercase; 
    margin-left: 20px;
    font-weight: 400;
@@ -66,9 +69,18 @@ footer {
     background-color: #fcf9f2;
     color: #000000;
     padding: 30px 20px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+
+.footer-sections {
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 footer div {
@@ -80,12 +92,14 @@ footer h3 {
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 footer p, footer a {
     font-size: 13px;
     color: #000000;
     text-decoration: none;
+    display: block;
     margin: 5px 0;
 }
 
