@@ -5,141 +5,88 @@ body {
     background-position: center;
     background-attachment: fixed;
     margin: 0; 
-    color: #ffffff;
 }
 
+/* for head and nav part */
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
+    justify-content: flex-start;
+    padding: 15px 40px;
     align-items: center;
     background-color: #d1e8e2;
-    border-bottom: 2px solid rgba(225, 225, 225, 0.3);
-    margin-bottom: 20px;
-}   
-
-.logo-container { 
-    width: 150px;
-    height: 60px;
-    background-image: url("logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 nav {
     display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 60px;
+}
+
+/* navigation bubble*/
+.nav-bubble {
+    background-color: rgba(49, 112, 142, 0.8);
+    padding: 8px 20px;
+    border-radius: 25px;
+    display: flex;
     gap: 15px;
 }
 
-nav a, nav button {
-    font-family: Arial;
-    font-weight: normal;
-    font-size: 15px;
-    color: #ffffff;
-    background-color: #31708e;
-    padding: 8px 15px;
+.nav-bubble a {
+    color: white;
     text-decoration: none;
-    border-radius: 25px;
+    font-size: 14px;
+}
+
+/* log in and sign up */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    background-color: #004d61;
+    color: white;
     border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
-/* Base style for sections - simple and clean */
-section {
-    padding: 20px;
-    margin: 20px;
-}
 
-/* FIX 1: Each Feature becomes its own individual bubble */
-li {
-    background-color: rgba(49, 112, 142, 0.7); 
-    padding: 15px;
-    border-radius: 30px;
-    margin-bottom: 10px;
-    list-style: none;
-    width: fit-content;
-    color: white;
+section, p, h2 {
+    background: none;
+    color: white; 
 }
-
-/* FIX 2: The Future Growth Bubble (Purple border + Dark blue text) */
-.growth-box {
-    background-color: rgba(138, 43, 226, 0.2); /* Light purple background */
-    border: 5px solid rgba(138, 43, 226, 0.6); /* Thick purple border */
-    border-radius: 20px;
-    color: #1a2a6c; /* Dark blue/purple text color */
-}
-
-/* Ensures text inside the growth box stays dark blue */
-.growth-box p, .growth-box h2 {
-    color: #1a2a6c;
-}
-
-h1, h2, p {
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-   font-family: 'ADLaM Display', cursive;
-   font-size: 50px;
-   margin-top: 50px;
-   text-transform: lowercase; 
-   margin-left: 20px;
-   font-weight: 400;
-}
-
-/* FIX 3: Floating image made more transparent */
+ 
 .floating-image {
     float: right;
-    width: 320px;
-    margin-right: 50px;
-    margin-top: -180px; 
-    border-radius: 10px;
-    opacity: 0.5; /* More see-through like the wireframe */
+    width: 350px;
+    margin-right: 40px;
+    margin-top: 20px; 
+    opacity: 0.5;
+    border-radius: 15px;
+}
+
+.growth-box {
+    clear: both; 
+    background-color: rgba(138, 43, 226, 0.1); 
+    border: 5px solid rgba(138, 43, 226, 0.5); 
+    border-radius: 20px;
+    padding: 25px;
+    margin: 40px 20px;
+}
+
+
+.growth-box h2, .growth-box p {
+    color: #1a2a6c !important; 
+    font-weight: bold;
 }
 
 footer {
     background-color: #fcf9f2;
-    color: #000000;
+    color: black;
     padding: 30px 20px;
-    margin-top: 50px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.footer-sections {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-    
-footer div {
-    text-align: center;
-    min-width: 200px;
-}
-
-footer h3 {
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-footer p, footer a {
-    font-size: 13px;
-    color: #000000;
-    text-decoration: none;
-    display: block;
-    margin: 5px 0;
-}
-
-.copyright {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 10px;
-    border-top: 1px solid #ccc;
-    font-size: 12px;
 }
