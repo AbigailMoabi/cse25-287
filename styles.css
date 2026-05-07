@@ -10,11 +10,13 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 10px 20px;
     align-items: center;
     background-color: #d1e8e2;
-}
+    border-bottom: 2px solid rgba (225, 225, 225, 0.3);
+    margin-bottom: 20px;
+}   
 
 .logo-container { 
     width: 150px;
@@ -27,7 +29,7 @@ header {
 nav {
     display: flex;
     gap: 15px;
-    margin-left: 30px;
+
 }
 
 nav a, nav button {
@@ -43,26 +45,37 @@ nav a, nav button {
     cursor: pointer;
 }
 
-section {
+/* FIX: Added transparent background to match your wireframe */
+section, ul {
+    background-color: rgba(49, 112, 142, 0.7); 
     padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+/* FIX: Force all main text to be white so it pops off the blue */
+h1, h2, p, li {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
    font-family: 'ADLaM Display', cursive;
    font-size: 50px;
-   color: #ffffff;
    margin-top: 50px;
    text-transform: lowercase; 
    margin-left: 20px;
    font-weight: 400;
 }
 
+/* FIX: Made the image transparent so you can see the globe through it */
 .floating-image {
     float: right;
     width: 320px;
     margin-right: 50px;
     margin-top: -120px; 
     border-radius: 15px;
+    opacity: 0.8; 
 }
 
 footer {
@@ -75,14 +88,13 @@ footer {
     justify-content: space-around;
 }
 
-
 .footer-sections {
     display: flex;
-    width:100%;
+    width: 100%;
     justify-content: space-around;
     align-items: flex-start;
 }
-
+   
 footer div {
     text-align: center;
     min-width: 200px;
