@@ -7,13 +7,22 @@ body {
     margin: 0; 
 }
 
-/* for head and nav part */
+
 header {
     display: flex;
     justify-content: flex-start;
-    padding: 15px 40px;
+    padding: 10px 40px;
     align-items: center;
     background-color: #d1e8e2;
+}
+
+.logo-container { 
+    width: 150px;
+    height: 60px;
+    background-image: url("logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+   
 }
 
 nav {
@@ -23,11 +32,11 @@ nav {
     margin-left: 60px;
 }
 
-/* navigation bubble*/
+ 
 .nav-bubble {
-    background-color: rgba(49, 112, 142, 0.8);
-    padding: 8px 20px;
-    border-radius: 25px;
+    background-color: #31708e; 
+    padding: 10px 25px;
+    border-radius: 30px;
     display: flex;
     gap: 15px;
 }
@@ -38,12 +47,7 @@ nav {
     font-size: 14px;
 }
 
-/* log in and sign up */
-.auth-buttons {
-    display: flex;
-    gap: 10px;
-}
-
+/* log in and sign up*/
 .auth-buttons button {
     background-color: #004d61;
     color: white;
@@ -52,16 +56,24 @@ nav {
     border-radius: 20px;
     cursor: pointer;
 }
+ 
+h1 {
+   font-family: 'ADLaM Display', cursive;
+   font-size: 50px;
+   color: #ffffff;
+   margin-top: 40px;
+   margin-left: 20px;
+   text-transform: lowercase; 
+}
 
 
-section, p, h2 {
-    background: none;
+section, p {
     color: white; 
 }
- 
+
 .floating-image {
     float: right;
-    width: 350px;
+    width: 320px;
     margin-right: 40px;
     margin-top: 20px; 
     opacity: 0.5;
@@ -71,22 +83,30 @@ section, p, h2 {
 .growth-box {
     clear: both; 
     background-color: rgba(138, 43, 226, 0.1); 
-    border: 5px solid rgba(138, 43, 226, 0.5); 
-    border-radius: 20px;
     padding: 25px;
     margin: 40px 20px;
 }
 
-
-.growth-box h2, .growth-box p {
+.growth-box h2 {
     color: #1a2a6c !important; 
     font-weight: bold;
 }
 
+.growth-box p {
+    color: #ffffff !important;
+}
+
 footer {
-    background-color: #fcf9f2;
-    color: black;
+    background-color: #31708e; 
+    color: white;
     padding: 30px 20px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
+    border-radius: 20px 20px 0 0;
+}
+
+footer h3, footer p, footer a {
+    color: white;
+    text-decoration: none;
 }
