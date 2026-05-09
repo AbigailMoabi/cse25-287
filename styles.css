@@ -22,7 +22,7 @@ header {
 
 .logo-container {
     width: 140px;
-    height: 60px;
+    height: 80px;
 
     background-image: url("logo.png");
     background-size: contain;
@@ -35,17 +35,28 @@ header {
 .nav-links {
     display: flex;
     gap: 25px;
+    background-color: #31708e; 
+    padding: 10px 20px;
+    border-radius: 0px; 
+    align-items: center;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #000;
+    color: #ffffff; 
     font-size: 15px;
     font-weight: bold;
+    padding: 5px 12px;
+    transition: 0.3s;
+}
+
+.nav-links a.active {
+    background-color: #d1e8e2; 
+    color: #31708e;           
+    border-radius: 5px;       
 }
 
 /* BUTTONS */
-
 .auth-buttons {
     display: flex;
     gap: 10px;
@@ -54,41 +65,36 @@ header {
 .auth-buttons button {
     background-color: #31708e;
     color: white;
-
     border: none;
     border-radius: 20px;
-
     padding: 8px 18px;
-
     cursor: pointer;
 }
 
 /* HERO SECTION */
 
-.hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 50px;
-}
-
 .hero-text {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    gap: 10px;
 }
 
 .hero-text h1 {
-    font-size: 60px;
+    font-family: 'ADLaM Display', cursive;
     color: white;
-    text-transform: lowercase;
-
-    margin-bottom: 20px;
+    font-size: 60px;
+    margin: 0;
+    line-height: 1.2;
 }
 
 .hero-text p {
     color: white;
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 20px;
+    margin: 0;
 }
 
 .start-btn {
@@ -105,29 +111,83 @@ header {
     cursor: pointer;
 }
 
+.right-text {
+    font-family: Arial, sans-serif;
+    color: #f0f0f0; 
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+.features {
+    text-align: center;
+    margin-top: 40px;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.features h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.features p {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+
 .hero-image img {
     width: 320px;
     border-radius: 20px;
 }
 
+.bubble {
+    color: black; 
+    line-height: 1.6; 
+    padding: 20px; 
+    border-radius: 15px; 
+    margin-bottom: 40px; 
+}
+
+.bubble-1 {
+    background-color: #33665D;
+    opacity: 58%;
+}
+
+.bubble-2 {
+    background-color: #523D75;
+    opacity: 52%;
+}
+
+.bubble-3 {
+    background-color: #6F4F68;
+    opacity: 45%;
+}
+
 /* GROWTH BOX */
 
 .growth-box {
-    background-color: rgba(49, 112, 142, 0.8);
-
-    margin: 40px;
-    padding: 30px;
-
-    border-radius: 15px;
+  margin: 40px;
+  padding: 30px;
+  
+  background-color: #9C88B47A; 
+  border: 6px solid #8a2be2;
+  border-radius: 0px; 
 }
 
 .growth-box h2 {
-    color: white;
+  color: #1a2a6c;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin-top: 0;
 }
 
 .growth-box p {
-    color: white;
-    line-height: 1.6;
+  color: #000000; 
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
 }
 
 /* FOOTER */
@@ -141,29 +201,48 @@ footer {
     padding: 30px 20px 10px;
 }
 
+footer {
+    background-color: #fcf9f2;
+    color: #000000;
+    padding: 30px 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .footer-sections {
     display: flex;
+    width: 100%;
     justify-content: space-around;
-
-    margin-bottom: 20px;
+    align-items: flex-start;
+}
+   
+footer div {
+    text-align: center;
+    min-width: 200px;
 }
 
-.footer-sections h3 {
+footer h3 {
+    font-size: 14px;
+    text-transform: uppercase;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
-.footer-sections a {
-    color: white;
+footer p, footer a {
+    font-size: 13px;
+    color: #000000;
     text-decoration: none;
-}
-
-.footer-sections p {
+    display: block;
     margin: 5px 0;
 }
 
 .copyright {
+    width: 100%;
     text-align: center;
-    border-top: 1px solid white;
-
+    margin-top: 20px;
     padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
 }
