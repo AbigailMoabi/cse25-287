@@ -1,3 +1,4 @@
+/*1. GLOBAL & BODY STYLES*/
 body { 
     font-family: Arial, sans-serif;  
     background-image: url("study_world.jpg");
@@ -7,47 +8,125 @@ body {
     margin: 0; 
 }
 
-
+/*2. HEADER & LOGO SECTION*/
 header {
     display: flex;
     justify-content: flex-start;
     padding: 10px 40px;
     align-items: center;
     background-color: #d1e8e2;
+    min-height: 120px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    gap: 10px; 
+}
+
+.hero-text h1 {
+    font-family: 'ADLaM Display', cursive;
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.right-text {
+    font-family: Arial, sans-serif;
+    color: #f0f0f0; /* soft cream color */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
 }
 
 .logo-container { 
-    width: 150px;
-    height: 60px;
+    width: 140px;
+    height: 100px;
     background-image: url("logo.png");
     background-size: contain;
     background-repeat: no-repeat;
-   
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-left: 60px;
+.features {
+    text-align: center;
+    margin-top: 40px;
 }
 
- 
+.features h3, .features p {
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+}
+
+.features h3 {
+    font-size: 24px;
+}
+
+.bubble {
+    color: black; 
+    line-height: 1.6;
+    padding: 20px; 
+    border-radius: 15px; 
+    margin-bottom: 20px; 
+}
+
+.bubble-1 {
+    background-color: #33665D;
+    opacity: 58%;
+}
+
+.bubble-2 {
+    background-color: #523D75;
+    opacity: 52%;
+}
+
+.bubble-3 {
+    background-color: #6F4F68;
+    opacity: 45%;
+}
+
+/*3. NAVIGATION BUBBLE & LINKS */
 .nav-bubble {
     background-color: #31708e; 
     padding: 10px 25px;
-    border-radius: 30px;
+    border-radius: 0px;
     display: flex;
-    gap: 15px;
+    gap: 20px;
+    margin-left: 60px;
 }
 
 .nav-bubble a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
 }
 
-/* log in and sign up*/
+.nav-bubble a.active {
+    background-color: #d1e8e2;
+    color: #31708e;
+    border-radius: 5px;
+}
+
+/*4. LOGIN & SIGNUP BUTTONS */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
 .auth-buttons button {
     background-color: #004d61;
     color: white;
@@ -56,58 +135,74 @@ nav {
     border-radius: 20px;
     cursor: pointer;
 }
- 
-h1 {
-   font-family: 'ADLaM Display', cursive;
-   font-size: 50px;
-   color: #ffffff;
-   margin-top: 40px;
-   margin-left: 20px;
-   text-transform: lowercase; 
-}
 
-
-section, p {
-    color: white; 
-}
-
-.floating-image {
-    float: right;
-    width: 320px;
-    margin-right: 40px;
-    margin-top: 20px; 
-    opacity: 0.5;
-    border-radius: 15px;
-}
-
+/*5. FUTURE GROWTH & FLOATING IMAGE */
 .growth-box {
-    clear: both; 
-    background-color: rgba(138, 43, 226, 0.1); 
-    padding: 25px;
-    margin: 40px 20px;
+  margin: 40px;
+  padding: 30px;
+  background-color:#9c88b47A ; 
+  border: 6px solid #8a2be2;
+  border-radius: 0px; 
 }
 
 .growth-box h2 {
-    color: #1a2a6c !important; 
-    font-weight: bold;
+  color: #1a2a6c;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin-top: 0;
 }
 
 .growth-box p {
-    color: #ffffff !important;
+  color: #000000; 
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
 }
+
+.floating-image {
+    width: 350px;
+    opacity: 0.6;
+    float: right;
+    margin-right: 50px;
+    margin-left: 20px;
+    border-radius: 0px;
+}
+
+/* 6. FOOTER SECTION */
 
 footer {
-    background-color: #31708e; 
+    background-color: #31708e;
+
     color: white;
-    padding: 30px 20px;
+
     margin-top: 50px;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    border-radius: 20px 20px 0 0;
+    padding: 30px 20px 10px;
 }
 
-footer h3, footer p, footer a {
+.footer-sections {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 20px;
+}
+
+.footer-sections h3 {
+    margin-bottom: 10px;
+}
+
+.footer-sections a {
     color: white;
     text-decoration: none;
+}
+
+.footer-sections p {
+    margin: 5px 0;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid white;
+
+    padding-top: 10px;
 }
