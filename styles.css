@@ -99,28 +99,38 @@ header {
 /*3. NAVIGATION BUBBLE & LINKS */
 .navbar {
     position:relative;
-    padding: 15px 20px;
+    padding: 15px 30px;
     background:rgba(225, 225,225, 0.05) ;
     border-radius: 60px;
     backdrop-filter: blur (15px);
     box-shadow: 0 15px 35px rgba(0, 0,0, 0.5);
     border: 0.5px solid #ccc;
+    display:flex;
+    justify-content: space-between;
 }
 
 /*4. LOGIN & SIGNUP BUTTONS */
-.auth-buttons {
+.auth-links {
     display: flex;
     gap: 10px;
     margin-left: auto;
+    
 }
 
-.auth-buttons button {
+.auth-links a {
     background-color: #004d61;
     color: white;
     border: none;
     padding: 8px 18px;
     border-radius: 20px;
     cursor: pointer;
+    font-size: 14px;
+    display:inline-block
+}
+
+.auth-links a:hover {
+    background-color: #003a4a;
+    opacity:0.9;
 }
 
 /*5. FUTURE GROWTH & FLOATING IMAGE */
