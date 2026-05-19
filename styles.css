@@ -38,8 +38,7 @@ footer p, footer .text-secondary {
 
 .home-bg {
    
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('study_world.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) url('study_world.jpg') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
 }
@@ -52,7 +51,7 @@ h1 {
 }
 
 
-/* 3. FOOTER, COPYRIGHT & HIGHLIGHTS          */
+/* 3. FOOTER, COPYRIGHT & HIGHLIGHTS*/
 
 footer {
     background-color: #050505;
@@ -77,7 +76,7 @@ footer a, .footer-link {
 }
 
 footer a:hover {
-    text-shadow: 0 0 15px rgb(239, 53, 109);
+    text-shadow: 0 0 15px rgb(186, 54, 189);
     color: #ffffff !important;
 }
 
