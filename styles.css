@@ -189,3 +189,56 @@ footer a:hover {
     color: #000000;
     box-shadow: 0 0 15px #00d4ff;
 }
+
+
+/* 5. CHAT PAGE STYLES   */
+
+.chat-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 20px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Chat Bubbles */
+.message {
+    max-width: 70%;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+}
+
+.received {
+    align-self: flex-start;
+    background: #656cb5; 
+    color: white;
+    border-bottom-left-radius: 2px;
+}
+
+.sent {
+    align-self: flex-end;
+    background: #4a4e69; 
+    color: white;
+    border-bottom-right-radius: 2px;
+}
+
+.chat-input-area {
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.chat-input-area input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
