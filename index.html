@@ -2,84 +2,174 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home | Study With Me</title>
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study With Me - Home</title>
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo-container"></div>
-        
-        <nav class="navbar">
-            <ul class=" nav-links">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="Course.html">Course hub</a></li>
-            <li><a href="Chat.html">Chat</a></li>
-            <li><a href="Study.html">Study</a></li>
-            <li><a href="Resources.html">Resources</a></li>
-            <li><a href="Profile.html">Profile</a></li>
-            <div class="indicator"></div>
-            </ul>
-        <div class="auth-links">
-        <a href="login.html"
-        class="nav-link">Log in</a>
-        <a href="signup.html"
-        class="nav-link">Sign up</a>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            
+           
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Logo" width="40" height="40" class="me-2">
+                <strong>Study With Me</strong>
+            </a>
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+         
+            <div class="collapse navbar-collapse" id="myNavbar">
+               
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="course-hub.html">Course Hub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chat.html">Chat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="study.html">Study</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                </ul>
+
+               
+                <div class="navbar-nav">
+                    <a class="nav-link text-light me-2" href="login.html">Login</a>
+                    <a class="btn btn-primary text-white px-3" href="signup.html">Sign Up</a>
+                </div>
+            </div>
+
         </div>
-    </nav> 
+    </nav>
 
 
-    </header>
+    
+    <main class="py-5">
+        <div class="container my-5">
+            <div class="row align-items-center">
+                
+               
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h1 class="display-4 fw-bold text-light">
+                        Welcome to <br><span class="text-primary">Study With Me.</span>
+                    </h1>
+                </div>
+                
+                
+                <div class="col-md-6">
+                    <p class="fs-5 text-secondary">
+                        Connect with engineering and health science students in your course and collaborate in real time. Study together across the world—together we go forward.
+                    </p>
+                    <a href="signup.html" class="btn btn-primary btn-lg mt-3">Get Started</a>
+                </div>
 
-    <main>
-        <section>
-            <img src="study_group.webp" alt="Students" class="floating-image">
-            <h1>welcome to study with me</h1>
-            <p>Connect with ENGINEERING and HEALTH SCIENCE students in your course and collaborate in real time. Study together across the world. Together we go forward!</p>
-        </section>
-
-      <section>
-    <h2>OUR FEATURES</h2>
-    <ul>
-        <li class="feature-bubble">It enables you to connect globally</li>
-        <li class="feature-bubble">real time discussions</li>
-        <li class="feature-bubble">access academic resources</li>
-    </ul>
-</section>
-
-<div class="growth-box">
-    <h2 class="growth-title">FUTURE GROWTH</h2>
-    <p class="growth-text">Currently Study Withe Me offers specialized courses in Computer Systems Engineering, Mechanical Engineering, Electrical Engineering as well as Medicine, Nursing and Pharmacy. Our goal is to soon plan to offer a wider range of Engineering and Health Science courses.</p>
-</div>  
+            </div>
+        </div>
     </main>
 
-   <footer>
-       
-        <section class="footer-sections">
-            <div>
-                <h3>ABOUT</h3>
-                <a href="about.html">About us</a>
+
+    
+    <section class="bg-dark text-light py-5">
+        <div class="container">
+            
+            
+            <h2 class="text-center fw-bold mb-5">OUR FEATURES</h2>
+            
+           
+            <div class="row text-center g-4">
+                
+               
+                <div class="col-md-4">
+                    <div class="p-4 border border-secondary rounded">
+                        <div class="fs-1 mb-2">🌐</div>
+                        <h4 class="fw-bold">Connect Globally</h4>
+                        <p class="text-secondary">Bridge the gap between borders and meet up with peers from different locations instantly.</p>
+                    </div>
+                </div>
+
+            
+                <div class="col-md-4">
+                    <div class="p-4 border border-secondary rounded">
+                        <div class="fs-1 mb-2">💬</div>
+                        <h4 class="fw-bold">Real-Time Discussions</h4>
+                        <p class="text-secondary">Engage in rapid-fire brainstorming sessions and live chat rooms tailored to your modules.</p>
+                    </div>
+                </div>
+
+    
+                <div class="col-md-4">
+                    <div class="p-4 border border-secondary rounded">
+                        <div class="fs-1 mb-2">📚</div>
+                        <h4 class="fw-bold">Access Academic Resources</h4>
+                        <p class="text-secondary">Instantly retrieve shared lecture notes, practical study guides, and vital tools anytime.</p>
+                    </div>
+                </div>
+
             </div>
-
-            <div>
-                <h3>CONTACT</h3>
-                <p>+267 76103149</p>
-                <p>+267 72615850</p>
-
-                <a href="mailto:cse25-287@thuto.bac.ac.bw">cse25-287@thuto.bac.ac.bw</a>
-            </div>
-
-            <div>
-                <h3>LEGAL</h3>
-                <p>privacy policy</p>
-            </div>
-        </section>
-
-        <div class="copyright">
-            <p>&copy; 2026 Study With Me. All rights reserved.</p>
         </div>
-    </footer> 
+    </section>
 
+
+
+    <section class="py-5 text-center">
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    
+                    <h2 class="fw-bold text-light mb-4">FUTURE GROWTH</h2>
+                    <p class="fs-5 text-secondary">
+                        Currently, Study With Me offers specialized courses in Computer Systems Engineering, Mechanical Engineering, Electrical Engineering, as well as Medicine, Nursing, and Pharmacy. Our goal is to soon plan to offer a wide range of Engineering and Health Science courses.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <footer class="bg-dark text-secondary py-5 border-top border-secondary">
+    <div class="container">
+        <div class="row text-center text-md-start g-4">
+            
+            <div class="col-md-4">
+                <h6 class="text-primary fw-bold">PAGES</h6>
+                <ul class="list-unstyled">
+                    <li><a href="about.html" class="text-secondary text-decoration-none">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h6 class="text-primary fw-bold">CONTACT US</h6>
+                <p class="mb-1">
+                    <a href="mailto:cse25-287@thuto.bac.ac.bw" class="text-secondary text-decoration-none">
+                        📩 cse25-287@thuto.bac.ac.bw
+                    </a>
+                </p>
+                <p class="text-secondary small">📞 (+267) 76103149</p>
+                <p class="text-secondary small">📞 (+267) 72615850</p>
+            </div>
+
+            <div class="col-md-4 text-md-end">
+                <h6 class="text-primary fw-bold">PRIVACY & LEGAL</h6>
+                <p class="small text-muted mb-2">
+                    Your data privacy is important. Study With Me ensures all user information is kept secure and used only for academic collaboration.
+                </p>
+                <p class="small text-muted mb-0">&copy; 2026 Study With Me.</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
