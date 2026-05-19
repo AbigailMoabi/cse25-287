@@ -10,7 +10,7 @@ body {
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.95) !important;
-    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+    border-bottom: 1px solid #12505d;
 }
 
 .nav-link {
@@ -19,18 +19,19 @@ body {
 
 .nav-link:hover, .nav-link.active {
     color: #00d4ff !important;
-    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
 }
 
 footer {
-    background-color: #0a0a0a;
-    border-top: 1px solid rgba(0, 212, 255, 0.3) !important;
+    background-color: #163c6e;
+    border-top: 1px solid #1f1769 !important;
     padding: 40px 0;
 }
 
 footer p, footer .text-secondary {
     color: #b0b0b0 !important; 
-
+    font-size: 0.9rem;
+}
 
 /* 2. HOME PAGE ONLY (Index Background) */
 
@@ -41,9 +42,12 @@ footer p, footer .text-secondary {
     min-height: 100vh;
 }
 
+
 h1 {
     font-size: 3.5rem;
     font-weight: 800;
+    color: #ffffff;
+    text-shadow: 2px 2px 1opx rgba(0,0,0,0.8)
 }
 
 .text-primary {
@@ -73,4 +77,5 @@ h1 {
     border-radius: 50px;
     font-weight: 600;
     padding: 10px 25px;
+    box-shadow: 0 4px 15px rgba(0, 212,225,0.3);
 }
