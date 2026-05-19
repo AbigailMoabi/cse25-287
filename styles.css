@@ -19,7 +19,7 @@ body {
 
 .nav-link:hover, .nav-link.active {
     color: #00d4ff !important;
-    text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+    text-shadow: 0 0 10px rgba(173, 32, 164, 0.8);
 }
 
 footer {
@@ -33,49 +33,49 @@ footer p, footer .text-secondary {
     font-size: 0.9rem;
 }
 
-/* 2. HOME PAGE ONLY (Index Background) */
+
+/* 2. HOME PAGE (Background & Main Content)   */
 
 .home-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+   
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                 url('study_world.jpg') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
 }
 
-
 h1 {
     font-size: 3.5rem;
     font-weight: 800;
     color: #ffffff;
-    text-shadow: 2px 2px 1opx rgba(0,0,0,0.8)
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
-.text-primary {
+
+/* 3. FOOTER, COPYRIGHT & HIGHLIGHTS          */
+
+footer {
+    background-color: #050505;
+    border-top: 2px solid #00d4ff !important;
+    padding: 50px 0;
+}
+
+/* Copyright and Privacy text */
+footer p, footer .text-secondary, .copyright-text {
+    color: #ffffff !important; 
+    font-size: 0.9rem;
+    opacity: 1 !important;
+}
+
+/*  About Us and Email links */
+footer a, .footer-link {
     color: #00d4ff !important;
-    text-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
-}
-
-
-/* 3. MODERN COMPONENTS         */
-
-.border-secondary {
-    background: rgba(255, 255, 255, 0.05); 
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    border-radius: 15px;
-    transition: 0.4s;
-}
-
-.border-secondary:hover {
-    transform: translateY(-5px);
-    border-color: #00d4ff !important;
-}
-
-.btn-primary {
-    background-color: #00d4ff;
-    border: none;
-    border-radius: 50px;
     font-weight: 600;
-    padding: 10px 25px;
-    box-shadow: 0 4px 15px rgba(0, 212,225,0.3);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-shadow: 0 0 15px rgb(239, 53, 109);
+    color: #ffffff !important;
 }
