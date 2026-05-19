@@ -56,7 +56,7 @@ h1 {
 
 footer {
     background-color: #050505;
-    border-top: 2px solid #00d4ff !important;
+    border-top: 2px solid #20129c9b !important;
     padding: 50px 0;
 }
 
@@ -73,9 +73,26 @@ footer a, .footer-link {
     font-weight: 600;
     transition: 0.3s;
     text-decoration: none;
+    margin: 5px 0;
 }
 
 footer a:hover {
     text-shadow: 0 0 15px rgb(239, 53, 109);
     color: #ffffff !important;
+}
+
+footer p, .text-secondary {
+    color: #ffffff !important;
+    max-width:  700px;
+    margin: 15px auto auto !important;
+    opacity: 1 !important;
+    font-size: 0.9rem;
+    line-height: 1.6;
+
+}
+
+/* Copyright */
+.copyright-text {
+    margin-top: 10px;
+    color: #a05995;
 }
