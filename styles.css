@@ -276,5 +276,5 @@ footer a:hover {
 .chat-room-link:hover, 
 .chat-room-link.active {
     background: rgba(0, 212, 255, 0.15);
-    color: #00d4ff !importa
+    color: #00d4ff !important
 }
