@@ -6,25 +6,14 @@
     <title>About Us | Study With Me</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-      
-        .about-photo-frame img {
-            max-width: 320px; 
-            width: 100%;
-            height: auto;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-        }
-        
-        footer {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-    </style>
 </head>
 <body class="bg-dark text-white d-flex flex-column min-vh-100">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Study With Me</a>
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="logo.png" alt="Study With Me Logo" class="d-inline-block align-top">
+            </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,6 +27,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="about.html">About</a>
                     </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -53,17 +43,18 @@
 
             <div class="col-12 col-md-6 offset-md-1">
                 <div class="about-text-container">
-                    <h1 class="founder-name fw-bold display-5">Abigail Moabi</h1>
-                    <p class="founder-title text-uppercase text-muted fw-semibold tracking-wider">Founder & Lead Developer</p>
+                    <h1 class="founder-name fw-bold display-5 mb-1">Abigail Moabi</h1>
                     
-                    <div class="about-bio mt-4 text-secondary">
-                        <p class="text-white-50">My name is ABIGAIL MOABI. My journey in higher education has been full of challenges and growth. Imagine being away from home to study, trying to balance your independence, and overcoming self-doubt.</p>
+                    <p class="founder-title">Founder & Lead Developer</p>
+                    
+                    <div class="about-bio mt-4 text-white-50 fs-5">
+                        <p>My name is ABIGAIL MOABI. My journey in higher education has been full of challenges and growth. Imagine being away from home to study, trying to balance your independence, and overcoming self-doubt.</p>
                         
-                        <p class="text-white-50">All these experiences shaped me. I realized that there are some students like me who thrive when they connect in their own way—especially when they can share knowledge without the pressure of a crowd.</p>
+                        <p>All these experiences shaped me. I realized that there are some students like me who thrive when they connect in their own way—especially when they can share knowledge without the pressure of a crowd.</p>
                         
-                        <blockquote class="about-mission border-start border-primary border-3 ps-3 italic mt-4 text-white">
-                            <em>"That is why I created Study With Me... A global digital space where students across the world can come together, learn, and grow united."</em>
-                        </blockquote>
+                        <p>
+                            That is why I created Study With Me... A global digital space where students across the world can come together, learn, and grow united.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -71,8 +62,7 @@
         </div>
     </div>
 
-    
-    <footer class="bg-dark text-secondary py-5 border-top border-secondary">
+    <footer class="bg-dark text-secondary py-5 border-top border-secondary mt-auto">
         <div class="container">
             <div class="row text-center text-md-start">
                 <div class="col-md-4 mb-4">
@@ -83,7 +73,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <h5 class="text-white mb-3">CONTACT US</h5>
-                    <a href="mailto:cse25-287@thuto.bac.ac.bw" class="text-secondary text-decoration-none">
+                    <a href="mailto:cse25-287@thuto.bac.ac.bw" class="text-secondary text-decoration-none d-block mb-1">
                         📩 cse25-287@thuto.bac.ac.bw
                     </a>
                     <p class="mb-1">📞 (+267) 76103149</p>
@@ -95,7 +85,7 @@
                 </div>
             </div>
             <div class="text-center pt-4 border-top border-secondary mt-4">
-                <p class="copyright-text">&copy; 2026 Study With Me. All Rights Reserved.</p>
+                <p class="copyright-text mb-0">&copy; 2026 Study With Me. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
