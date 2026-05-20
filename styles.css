@@ -401,7 +401,7 @@ footer a:hover {
 }
 
 .founder-title {
-    color: #cccccc !important;
+    color: #0b115f !important;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600;
@@ -412,4 +412,49 @@ footer a:hover {
     color: rgba(255, 255, 255, 0.8);
     font-size: 1.1rem;
     line-height: 1.6;
+}
+
+/* 9. ACCOUNT PAGE*/
+
+.auth-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.auth-card {
+    background-color: #1a1d21;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.auth-form-control {
+    background-color: #2b3035;
+    border: 1px solid #444;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.auth-divider {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-auth {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .auth-divider {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
 }
