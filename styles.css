@@ -190,10 +190,8 @@ footer a:hover {
     box-shadow: 0 0 15px #00d4ff;
 }
 
-
-/* ========================================== */
 /* 5. CHAT PAGE STYLES                        */
-/* ========================================== */
+
 
 /* The overall chat 'screen' container */
 .chat-container {
@@ -280,6 +278,10 @@ footer a:hover {
 }
 
 /* --- 6. STUDY PAGE STYLES --- */
+
+.study-title {
+    text-shadow: 2px 2px 4px black;
+}
 
 /* Highlighted border for the search area */
 .border-info {
