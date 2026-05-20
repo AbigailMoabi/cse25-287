@@ -328,7 +328,7 @@ footer a:hover {
     color: white;
 }
 
-/* RESOURCES PAGE STYLES*/
+/* 7.RESOURCES PAGE STYLES*/
 
 /* Main Hero Title with Glow Shadow */
 .resource-main-title {
@@ -389,4 +389,27 @@ footer a:hover {
 
 .resource-link:hover {
     color: #00d4ff;
+}
+
+/* 8.About Page */
+
+.about-photo-frame img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.founder-title {
+    color: #cccccc !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.about-bio p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
