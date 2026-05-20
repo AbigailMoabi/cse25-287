@@ -191,10 +191,11 @@ footer a:hover {
 }
 
 
-/* 5. CHAT PAGE STYLEs  */
+/* ========================================== */
+/* 5. CHAT PAGE STYLES                        */
+/* ========================================== */
 
-
-/* chat 'screen' container */
+/* The overall chat 'screen' container */
 .chat-container {
     background: rgba(255, 255, 255, 0.05); 
     backdrop-filter: blur(10px); 
@@ -205,16 +206,15 @@ footer a:hover {
     flex-direction: column;
 }
 
-
 .chat-messages {
     flex-grow: 1;
-    overflow-y: auto; /* Adds scroll if many messages accumulate */
+    overflow-y: auto; 
     display: flex;
     flex-direction: column;
     gap: 15px; 
 }
 
-/* individual chat bubbles */
+/* Individual chat bubbles */
 .message {
     max-width: 75%; 
     padding: 10px 15px;
@@ -222,21 +222,21 @@ footer a:hover {
     font-size: 0.95rem;
 }
 
-/* If you eventually add  messages, receive bubbles align left */
+/* Received bubbles align left */
 .received {
     align-self: flex-start;
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff;
 }
 
-/* Sent bubbles align right*/
+/* Sent bubbles align right */
 .sent {
     align-self: flex-end;
     background-color: rgba(0, 212, 255, 0.2); 
     color: #ffffff;
 }
 
-/* the input and send button */
+/* The input area container fixed to look right */
 .chat-input-area {
     background: rgba(0, 0, 0, 0.3); 
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -244,7 +244,37 @@ footer a:hover {
     border-bottom-right-radius: 20px;
 }
 
-/* Ensures the placeholder text in the input is readable but subtle */
 .chat-input-area input::placeholder {
     color: rgba(255, 255, 255, 0.5);
+}
+
+/* CHAT ROOM (SPACING & LINKS)*/
+
+.col-md-4 .course-card {
+    height: auto !important;
+}
+
+
+.col-md-4 .course-card h5 {
+    margin-bottom: 12px !important;
+}
+
+.col-md-4 .course-card ul {
+    margin-bottom: 20px !important;
+}
+
+.chat-room-link {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.chat-room-link:hover, 
+.chat-room-link.active {
+    background: rgba(0, 212, 255, 0.15);
+    color: #00d4ff !important
 }
