@@ -191,54 +191,60 @@ footer a:hover {
 }
 
 
-/* 5. CHAT PAGE STYLES   */
+/* 5. CHAT PAGE STYLEs  */
 
+
+/* chat 'screen' container */
 .chat-container {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(10px); 
     border: 1px solid rgba(0, 212, 255, 0.2);
     border-radius: 20px;
-    height: 500px;
+    height: 600px; 
     display: flex;
     flex-direction: column;
 }
+
 
 .chat-messages {
     flex-grow: 1;
-    overflow-y: auto;
+    overflow-y: auto; /* Adds scroll if many messages accumulate */
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 15px; 
 }
 
-/* Chat Bubbles */
+/* individual chat bubbles */
 .message {
-    max-width: 70%;
-    padding: 12px 18px;
+    max-width: 75%; 
+    padding: 10px 15px;
     border-radius: 20px;
     font-size: 0.95rem;
 }
 
+/* If you eventually add  messages, receive bubbles align left */
 .received {
     align-self: flex-start;
-    background: #656cb5; 
-    color: white;
-    border-bottom-left-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
 }
 
+/* Sent bubbles align right*/
 .sent {
     align-self: flex-end;
-    background: #4a4e69; 
-    color: white;
-    border-bottom-right-radius: 2px;
+    background-color: rgba(0, 212, 255, 0.2); 
+    color: #ffffff;
 }
 
+/* the input and send button */
 .chat-input-area {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3); 
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
+/* Ensures the placeholder text in the input is readable but subtle */
 .chat-input-area input::placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
