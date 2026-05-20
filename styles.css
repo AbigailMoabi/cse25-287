@@ -327,3 +327,66 @@ footer a:hover {
     box-shadow: none;
     color: white;
 }
+
+/* RESOURCES PAGE STYLES*/
+
+/* Main Hero Title with Glow Shadow */
+.resource-main-title {
+    color: white;
+    text-shadow: 2px 2px 4px black, 0 0 10px #00d4ff;
+    letter-spacing: 1px;
+}
+
+/* Container for Course Search Input */
+.border-info {
+    border: 2px solid #00d4ff !important;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Custom Input Field Styling */
+#courseSearch {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    color: white;
+}
+
+#courseSearch::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* The Clean List Container */
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual Resource Card Styles */
+.resource-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #00d4ff;
+    margin: 15px 0;
+    padding: 16px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Interactive Slide and Glow Effect on Hover */
+.resource-item:hover {
+    background: rgba(0, 212, 255, 0.1);
+    transform: translateX(10px);
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
+}
+
+/* Clickable Link Styles */
+.resource-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+}
+
+.resource-link:hover {
+    color: #00d4ff;
+}
