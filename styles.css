@@ -393,11 +393,17 @@ footer a:hover {
 
 /* 8.About Page */
 
+.about-text-container, .about-bio {
+    background-color: #1e1e1e; /* Gives a sleek dark background so white text stands out */
+    padding: 30px;
+    border-radius: 12px;
+}
+
 .about-photo-frame img {
     max-width: 320px;
     width: 100%;
     height: auto;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
 .founder-title {
